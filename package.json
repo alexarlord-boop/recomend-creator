@@ -1,26 +1,31 @@
 {
   "name": "recomend-creator",
   "version": "1.0.0",
-  "main": "index.js",
-
-  "homepage": "https://github.com/",
-"_moduleAliases": {
+  "main": "server.js",
+  "homepage": "https://github.com/alexarlord-boop/recomend-creator#readme",
+  "_moduleAliases": {
     "@root": ".",
     "@RecommendCreator": "./services/RecommendCreatorAPI",
-    "@RecommendCreatorModels":"./services/RecommendCreatorAPI/app/models",
-    "@RecommendCreatorAPI":"./services/RecommendCreatorAPI/config/app.js",
+    "@RecommendCreatorModels": "./services/RecommendCreatorAPI/app/models",
+    "@RecommendCreatorAPI": "./services/RecommendCreatorAPI/config/app.js",
     "@config": "./services/RecommendCreatorAPI/config/index.js"
   },
-
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/vue-fontawesome": "^2.0.8",
+    "@popperjs/core": "^2.11.6",
     "abbrev": "^1.1.1",
     "agent-base": "^6.0.2",
     "ansi-regex": "^5.0.1",
     "aproba": "^2.0.0",
     "are-we-there-yet": "^2.0.0",
+    "axios": "^0.27.2",
     "balanced-match": "^1.0.2",
     "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
+    "bootstrap": "^5.2.1",
     "brace-expansion": "^1.1.11",
     "cadence": "^0.0.12",
     "canvas": "^2.10.1",
@@ -45,7 +50,9 @@
     "inflight": "^1.0.6",
     "inherits": "^2.0.4",
     "is-fullwidth-code-point": "^3.0.0",
+    "jquery": "^3.6.1",
     "jsonwebtoken": "^8.5.1",
+    "lodash.uniqueid": "^4.0.1",
     "lru-cache": "^6.0.0",
     "make-dir": "^3.1.0",
     "mimic-response": "^2.1.0",
@@ -54,7 +61,8 @@
     "minizlib": "^2.1.2",
     "mkdirp": "^1.0.4",
     "module-alias": "^2.2.2",
-    "mongoose": "^6.6.0",
+    "mongodb": "^4.9.1",
+    "mongoose": "^6.6.1",
     "morgan": "^1.10.0",
     "ms": "^2.1.2",
     "nan": "^2.16.0",
@@ -66,6 +74,7 @@
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.0",
     "path-is-absolute": "^1.0.1",
+    "popper.js": "^1.16.1",
     "readable-stream": "^3.6.0",
     "register": "^0.0.0",
     "rimraf": "^3.0.2",
@@ -81,13 +90,18 @@
     "tar": "^6.1.11",
     "tr46": "^0.0.3",
     "util-deprecate": "^1.0.2",
+    "vee-validate": "^2.2.15",
+    "vue-router": "^4.1.5",
+    "vuex": "^4.0.2",
     "webidl-conversions": "^3.0.1",
+    "webpack": "^5.0.0",
     "whatwg-url": "^5.0.0",
     "wide-align": "^1.1.5",
     "wrappy": "^1.0.2",
     "yallist": "^4.0.0"
   },
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -99,6 +113,9 @@
   "bugs": {
     "url": "https://github.com/alexarlord-boop/recomend-creator/issues"
   },
-  "homepage": "https://github.com/alexarlord-boop/recomend-creator#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "sass-loader": "^10.3.1"
+  }
 }
